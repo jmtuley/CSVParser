@@ -15,7 +15,9 @@ A "row model" is simply a class with publicly-settable attributes that match the
 ### Invocation
 
 Oh, you already have a data model to represent your rows? Super. Now a line like
+
 	var inputs = ReadStream<TestClass>(inputStream, true);
+
 will read from `inputStream`, making `inputs` a `List<TestClass>`. The secon parameter (`true`) intsructs the parser to trim the excess whitespace around each comma-separated entity. (You don't want to try `false`; it's pretty broken.)
 
 ### Input
